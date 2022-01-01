@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfect Memorizer</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="root">
+      <div id="saver-app">
+        <div class="container">
+          <h2 class="saver-app_address upper address">memorizer app</h2>
+          <!--NAME -->
+          <div class="saver_component saver_name">
+            <p class="address address1">name</p>
+            <p class="sub_address">* name of whatever you need to save.</p>
+            <input
+              type="text"
+              name="saved_name"
+              id="savedName"
+              placeholder="The name shouldn't be large"
+            />
+            <!-- <p class="notice">name of thing u need to save.</p> -->
+          </div>
+          <!-- KEYWORDS -->
+          <div class="saver_component saver_keywords">
+            <p class="address address1">keywords</p>
+            <p class="sub_address">* what are related keywords?</p>
+            <input
+              type="text"
+              name="saved_keywords"
+              id="savedKeywords"
+              placeholder="make space after each keyword"
+            />
+            <div class="keywords_container" id="keywordsBox"></div>
+          </div>
+          <!-- VALUE  -->
+          <div class="saver_component saver_message">
+            <p class="address address1">message</p>
+            <p class="sub_address">* what you need to save?</p>
+            <textarea
+              name=""
+              id="Message"
+              placeholder="Paste here text - code - urls"
+            ></textarea>
+          </div>
+          <button class="btn" id="okBtn" onclick="ok_name_keywords()">
+            ok
+          </button>
+          <p id="alertMessage" class="message">message</p>
+          <p id="successMessage" class="message success_message">message</p>
+          <!-- Saver Control-Panel -->
+          <div
+            class="saver_component saver_control-panel"
+            id="saverControlPanel"
+          >
+            <button class="btn saver_save-btn" onclick="save()">save</button>
+            <button class="btn saver_search-btn" onclick="search()">
+              search
+            </button>
+          </div>
+
+          <p class="message" id="wrongSaveOrSearch"></p>
+          <p class="message success_message" id="successSaveOrSearch"></p>
+
+          <!-- Search Results -->
+          <div class="saver_component search_results" id="searchResults">
+            <div class="search-results_address">
+              <p id="search_query">
+                Search about <span class="title">name:</span>
+                <span class="search-name" id="searchName"> </span> &
+                <span class="title">keywords:</span>
+                <span class="search-keywords" id="searchKeywords"></span>
+              </p>
+              <p id="num-search-results">
+                <span class="search-address">Results</span>:
+                <span id="resultsCount"></span>
+              </p>
+            </div>
+
+            <div>
+              <ol id="searchResultsContainer">
+                <!-- <li class="search-result">
+                  <div class="search-result_message">
+                    nfdinv iudfniuvb uidfnv iudfniuvbbdfok bofgb
+                    dfn vjidfni bnifggn biusfgiub iufgngb 
+                    bpogf miobmgfo jboi
+                  </div>
+                  <div class="search-result_keywords">
+                    <span>vmkdf n</span>
+                    <span>vmkdfk</span>
+                    <span>vmkdf</span>
+                  </div>
+                </li> -->
+              </ol>
+            </div>
+          </div>
+          <!-- USE CASEs -->
+          <!-- User Save HIS THING THROUGH NAME & KEYWORDS  -->
+          <!-- User RETURN HIS THING  THROUGH NAME & KEYWORDS -->
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/interface.js"></script>
+  <script src="js/lcoal_storage.js"></script>
+  <script src="js/script.js"></script>
+</html>

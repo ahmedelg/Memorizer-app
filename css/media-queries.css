@@ -1,0 +1,16 @@
+/* 768 */
+
+@media (max-width: 769px) {
+
+  #saver-app{
+    width: 80% !important;
+  }
+
+  /* body */
+
+  .saver_control-panel button{
+    width: 100% !important;
+    margin:.3rem 0;
+  }
+ 
+}
