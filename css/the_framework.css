@@ -3,7 +3,7 @@
 }
 
 .address{
- color: var(--mn-clr) !important;
+ color: #735de0 !important;
  font-weight: bold;
 }
 
@@ -15,7 +15,7 @@
 
 .sub_address{
   font-size:.9rem;
-  color:whitesmoke;
+  color: #9e8bff;
   text-transform: capitalize;
 }
 
@@ -49,7 +49,7 @@ input{
   /* #9c9c9c */
   margin:.3rem 0;
   min-width:100%;
-  border: 1px solid var(--bd-clr);
+  border: 1px solid #735de0;
   background-color: transparent;
   padding:.5rem;
   font-weight: normal !important;
@@ -75,22 +75,24 @@ input:focus{
 .selector{
   display: inline-block;
   background: #afafaf00;
-  color: #bfbfbf;
+  color: #ab8bff;
   padding:.3rem .5rem;
-  margin:.3rem;
-  border: 1px solid #afafaf;
+  margin: .3rem .2rem;
+  border: 1px solid #ab8bff;
   border-radius: 5px;
-  text-transform: capitalize;
+  text-transform: lowercase;
   font-size: .9rem;
   /* font-weight: 600; */
 }
 
 
 input:focus, textarea:focus{
-  outline: 1px solid white;
+  /* outline: 1px solid #735de0; */
+  outline: none;
+  box-shadow: 1px 2px 20px #735de0;
 }
 
 
 ol{
-  margin-left: 1rem;
+  /* margin-left: 1rem; */
 }
